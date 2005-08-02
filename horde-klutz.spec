@@ -28,7 +28,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_appdir			%{hordedir}/%{name}
 
 %description
-Klutz is a Horde comics-fetching module.
+Klutz is an application for viewing comic strips. It lets you view
+comics by date or by comic strip.
 
 The Horde Project writes web applications in PHP and releases them
 under the GNU Public License. For more information (including help
