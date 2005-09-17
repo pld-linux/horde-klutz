@@ -15,6 +15,7 @@ Source0:	ftp://ftp.horde.org/pub/snaps/%{_snap}/%{_hordeapp}-HEAD-%{_snap}.tar.g
 # Source0-md5:	3d3ef21991c2f8b3ac42f37d9ff76ac5
 Source1:	%{_hordeapp}.conf
 URL:		http://www.horde.org/klutz/
+BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 BuildRequires:	rpmbuild(macros) >= 1.226
 BuildRequires:	tar >= 1:1.15.1
 Requires:	apache >= 1.3.33-2
@@ -25,11 +26,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 # horde accesses it directly in help->about
 %define		_noautocompressdoc  CREDITS
-%define		_noautoreq		'pear(Horde.*)'
+%define		_noautoreq	'pear(Horde.*)'
 
-%define		hordedir	%{_datadir}/horde
+%define		hordedir	/usr/share/horde
 %define		_sysconfdir	/etc/horde.org
-%define		_appdir		%{hordedir}/%{name}
+%define		_appdir		%{hordedir}/%{_hordeapp}
 
 %description
 Klutz is an application for viewing comic strips. It lets you view
