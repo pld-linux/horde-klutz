@@ -25,7 +25,6 @@ Requires:	horde >= 3.0
 Requires:	webapps
 Requires:	webserver = apache
 Obsoletes:	%{_hordeapp}
-Conflicts:	apache < 1.3.33-2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
