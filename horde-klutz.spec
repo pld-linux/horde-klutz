@@ -1,9 +1,9 @@
 # TODO
 # - cli programs to subpackage?
 %define	_hordeapp klutz
-%define	_snap	2005-08-01
+%define	_snap	2006-01-08
 #define	_rc		rc1
-%define	_rel	0.9
+%define	_rel	0.1
 #
 %include	/usr/lib/rpm/macros.php
 Summary:	Horde comics-fetching module
@@ -14,7 +14,7 @@ Release:	%{?_rc:0.%{_rc}.}%{?_snap:0.%(echo %{_snap} | tr -d -).}%{_rel}
 License:	GPL v2+
 Group:		Applications/WWW
 Source0:	ftp://ftp.horde.org/pub/snaps/%{_snap}/%{_hordeapp}-HEAD-%{_snap}.tar.gz
-# Source0-md5:	3d3ef21991c2f8b3ac42f37d9ff76ac5
+# Source0-md5:	619b82d871deb986f29239ab074765c7
 Source1:	%{_hordeapp}.conf
 URL:		http://www.horde.org/klutz/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
