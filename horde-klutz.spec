@@ -7,7 +7,7 @@
 #
 %include	/usr/lib/rpm/macros.php
 Summary:	Horde comics-fetching module
-Summary(pl):	Modu³ Horde do pobierania komiksów
+Summary(pl.UTF-8):   ModuÅ‚ Horde do pobierania komiksÃ³w
 Name:		horde-%{_hordeapp}
 Version:	0.1
 Release:	%{?_rc:0.%{_rc}.}%{?_snap:0.%(echo %{_snap} | tr -d -).}%{_rel}
@@ -44,13 +44,13 @@ The Horde Project writes web applications in PHP and releases them
 under the GNU Public License. For more information (including help
 with Klutz) please visit <http://www.horde.org/>.
 
-%description -l pl
-Klutz to aplikacja do ogl±dania pasków komiksów. Pozwala ogl±daæ
+%description -l pl.UTF-8
+Klutz to aplikacja do oglÄ…dania paskÃ³w komiksÃ³w. Pozwala oglÄ…daÄ‡
 komiksy po dacie albo pasku.
 
 Projekt Horde tworzy aplikacje WWW w PHP i wydaje je na licencji GNU
-General Public License. Wiêcej informacji (w³±cznie z pomoc± dla
-Klutza) mo¿na znale¼æ na stronie <http://www.horde.org/>.
+General Public License. WiÄ™cej informacji (wÅ‚Ä…cznie z pomocÄ… dla
+Klutza) moÅ¼na znaleÅºÄ‡ na stronie <http://www.horde.org/>.
 
 %prep
 %setup -qcT -n %{?_snap:%{_hordeapp}-%{_snap}}%{!?_snap:%{_hordeapp}-%{version}%{?_rc:-%{_rc}}}
