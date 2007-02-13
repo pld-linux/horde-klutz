@@ -7,7 +7,7 @@
 #
 %include	/usr/lib/rpm/macros.php
 Summary:	Horde comics-fetching module
-Summary(pl.UTF-8):   Moduł Horde do pobierania komiksów
+Summary(pl.UTF-8):	Moduł Horde do pobierania komiksów
 Name:		horde-%{_hordeapp}
 Version:	0.1
 Release:	%{?_rc:0.%{_rc}.}%{?_snap:0.%(echo %{_snap} | tr -d -).}%{_rel}
