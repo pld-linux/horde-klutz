@@ -1,7 +1,7 @@
 # TODO
 # - cli programs to subpackage?
 %define	_hordeapp klutz
-%define	_snap	2006-01-08
+%define	_snap	2007-03-15
 #define	_rc		rc1
 %define	_rel	0.1
 #
@@ -14,7 +14,7 @@ Release:	%{?_rc:0.%{_rc}.}%{?_snap:0.%(echo %{_snap} | tr -d -).}%{_rel}
 License:	GPL v2+
 Group:		Applications/WWW
 Source0:	ftp://ftp.horde.org/pub/snaps/%{_snap}/%{_hordeapp}-HEAD-%{_snap}.tar.gz
-# Source0-md5:	619b82d871deb986f29239ab074765c7
+# Source0-md5:	2c8b93593636509c85be01a5ebcda375
 Source1:	%{_hordeapp}.conf
 URL:		http://www.horde.org/klutz/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
@@ -56,7 +56,6 @@ Klutza) można znaleźć na stronie <http://www.horde.org/>.
 %setup -qcT -n %{?_snap:%{_hordeapp}-%{_snap}}%{!?_snap:%{_hordeapp}-%{version}%{?_rc:-%{_rc}}}
 tar zxf %{SOURCE0} --strip-components=1
 
-rm {,*/}.htaccess
 for i in config/*.dist; do
 	mv $i config/$(basename $i .dist)
 done
