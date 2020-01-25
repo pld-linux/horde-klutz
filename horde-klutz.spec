@@ -5,7 +5,6 @@
 #define	_rc		rc1
 %define	_rel	0.1
 #
-%include	/usr/lib/rpm/macros.php
 Summary:	Horde comics-fetching module
 Summary(pl.UTF-8):	Moduł Horde do pobierania komiksów
 Name:		horde-%{_hordeapp}
